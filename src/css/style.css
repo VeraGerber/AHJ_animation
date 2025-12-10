@@ -1,0 +1,107 @@
+/* body {
+    background-color: #bdc2be;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: Arial sans-serif;
+    color: #000;
+    box-sizing: border-box;
+} */
+
+.main-container {
+    margin: 0 auto;
+    width: 50%;  
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.btn-container {
+    align-self: flex-start;
+}
+
+.btn {
+    padding: 9px 15px;
+    background-color: #0f79cf;
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.btn_border {
+    border: 5px solid #0fc9cf; 
+}
+
+.btn:hover {
+    background-color: #064681;
+    color: #fff;
+    cursor: pointer;
+}
+
+.content-container {
+    background-color: #ffffff;
+    border: 2px solid #bdc2be;
+    border-radius: 8px;
+    padding: 0 10px;
+    margin: 0 10px;
+    height: 70px;
+}
+
+.hidden {
+    display: none;
+}
+
+.open {
+    animation: toopen 500ms steps(5, end) forwards;
+}
+
+.close {
+    animation: close 500ms steps(5, end) forwards;
+}
+
+.content {
+    width: 100%;
+    margin: 0;
+}
+
+@keyframes close {
+    from {
+        height: 70px;
+    }
+    to {
+        height: 0;
+    }
+}
+
+@keyframes toopen {
+    from {
+        height: 0;
+    }
+    /* to {
+        height: 70px;
+    } */
+}
+
+@keyframes appearance {
+    from {
+        height: 0;
+    }
+    to {
+        height: 70px;
+    }
+}
+
+.copy {
+    background-color: #bdc2be;
+    text-align: end;
+    /* margin-right: 10px; */
+    height: 500px;
+    position: relative;
+}
